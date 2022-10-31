@@ -1,0 +1,28 @@
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+}
+
+.logo {
+  grid-column: 2/3;
+  justify-self: center;
+  font-size: 48px;
+  font-family: 'Bad Script', cursive;
+  color: #000094;
+}
+
+.link {
+  grid-column: 3/4;
+  justify-self: end;
+  color: lightseagreen;
+  font-family: "Roboto Light", sans-serif;
+}
+
+.linked {
+  color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+}
