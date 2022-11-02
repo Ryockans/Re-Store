@@ -1,13 +1,13 @@
 import React, {FC} from 'react';
 import {useSelector} from "react-redux";
 import {RootState} from "../../store";
-import ShoppingCartItemProps from "../models/shopping-cart-item-props";
+import ShoppingCartItem from "../models/shopping-cart-item";
 import ShoppingCartRow from "../shopping-cart-row";
 
 import styles from './shopping-cart.module.css'
 
 interface ShoppingCartProps {
-  items: ShoppingCartItemProps[]
+  items: ShoppingCartItem[]
 }
 
 const ShoppingCart: FC<ShoppingCartProps> = ({items}) => {

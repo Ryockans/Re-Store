@@ -4,10 +4,10 @@ import {useDispatch} from "react-redux";
 import {increment, decrement, clean} from "../../reducers/cart-counter";
 import {addToCart, removeFromCart, removeAll} from "../../reducers/shopping-cart";
 
-import ShoppingCartItemProps from "../models/shopping-cart-item-props";
+import ShoppingCartItem from "../models/shopping-cart-item";
 
 interface ShoppingCartRowProps {
-  item: ShoppingCartItemProps,
+  item: ShoppingCartItem,
   index: number
 }
 

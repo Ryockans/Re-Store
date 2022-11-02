@@ -1,4 +1,4 @@
-export default interface ShoppingCartItemProps {
+export default interface ShoppingCartItem {
   id: number,
   title: string,
   count: number,

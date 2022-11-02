@@ -1,8 +1,8 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
-import ShoppingCartItemProps from "../components/models/shopping-cart-item-props";
+import ShoppingCartItem from "../components/models/shopping-cart-item";
 
 interface ShoppingCartState {
-  items: ShoppingCartItemProps[]
+  items: ShoppingCartItem[]
 }
 
 const initialState: ShoppingCartState = {
@@ -20,7 +20,7 @@ export const shoppingCartSlice = createSlice({
   name: 'updateCart',
   initialState,
   reducers: {
-    addToCart: (state, action: PayloadAction<ShoppingCartItemProps>) => {
+    addToCart: (state, action: PayloadAction<ShoppingCartItem>) => {
       const index = findIndexByID(action.payload, state.items);
 
       if (index === -1){
@@ -29,14 +29,14 @@ export const shoppingCartSlice = createSlice({
         state.items[index].count++;
       }
     },
-    removeFromCart: (state, action: PayloadAction<ShoppingCartItemProps>) => {
+    removeFromCart: (state, action: PayloadAction<ShoppingCartItem>) => {
       const index = findIndexByID(action.payload, state.items);
       state.items[index].count--;
       if (state.items[index].count === 0) {
         state.items.splice(index, 1);
       }
     },
-    removeAll: (state, action: PayloadAction<ShoppingCartItemProps>) => {
+    removeAll: (state, action: PayloadAction<ShoppingCartItem>) => {
       const index = findIndexByID(action.payload, state.items);
       state.items.splice(index, 1);
     }

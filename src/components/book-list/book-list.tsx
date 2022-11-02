@@ -7,9 +7,11 @@ import BookListItem from "../book-list-item";
 import Spinner from "../spinner";
 import ErrorIndicator from "../error-indicator";
 import ServiceContext from "../service-context";
+import service from "../models/service";
 import {booksError, booksLoaded, booksRequired} from "../../reducers/book-list";
 
 import styles from './book-list.module.css'
+
 
 
 const BookList = () => {
@@ -20,9 +22,9 @@ const BookList = () => {
 
   const dispatch = useDispatch();
 
-  const serviceContext = useContext(ServiceContext);
+  const service = useContext(ServiceContext);
 
-  const fetchBooks = (service) => {
+  const fetchBooks = (service: service) => {
     dispatch(booksRequired());
     service.getBooks()
       .then((data: BookInfo[]) => {
@@ -35,7 +37,7 @@ const BookList = () => {
 
   // ComponentDidMount
   useEffect(() => {
-    fetchBooks(serviceContext);
+    fetchBooks(service);
   }, []);
 
   const renderList = () => {
