@@ -1,0 +1,46 @@
+.button {
+  height: 20px;
+  margin: 0 2px;
+  border: none;
+  border-radius: 10em;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.button:first-of-type {
+  margin-left: 0;
+}
+
+.button:last-of-type {
+  margin-right: 0;
+}
+
+.button.-increase {
+  width: 20px;
+  background-color: #2a9400;
+}
+
+.button.-increase:active {
+  box-shadow: 0 0 3px #2a9400;
+}
+
+.button.-decrease {
+  width: 20px;
+  background-color: #dc6e14;
+}
+
+.button.-decrease:active {
+  box-shadow: 0 0 3px #dc6e14;
+}
+
+.button.-delete {
+  background-color: crimson;
+}
+
+.button.-delete:active {
+  box-shadow: 0 0 3px crimson;
+}

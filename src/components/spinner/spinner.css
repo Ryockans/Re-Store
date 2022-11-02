@@ -1,0 +1,84 @@
+@keyframes ldio-2ol9qflonin {
+  0 % {background: #f8c86a}
+  12.5% {background: #f8c86a}
+  12.625% {background: #5b83e1}
+  100% {background: #5b83e1}
+}
+.ldio-2ol9qflonin div {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: #5b83e1;
+}
+
+.spinner__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.loadingio-spinner-blocks-5rl6rsk1epv {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-2ol9qflonin {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-2ol9qflonin div {box-sizing: content-box;}
+
+.ldio-2ol9qflonin-1 {
+  left:44px;
+  top:44px;
+  animation: ldio-2ol9qflonin 1s linear infinite;
+}
+.ldio-2ol9qflonin-2 {
+  left:82px;
+  top:44px;
+  animation: ldio-2ol9qflonin 1s linear infinite;
+  animation-delay:0.125s
+}
+.ldio-2ol9qflonin-3 {
+  left:120px;
+  top:44px;
+  animation: ldio-2ol9qflonin 1s linear infinite;
+  animation-delay:0.25s
+}
+.ldio-2ol9qflonin-4 {
+  left:44px;
+  top:82px;
+  animation: ldio-2ol9qflonin 1s linear infinite;
+  animation-delay:0.875s
+}
+.ldio-2ol9qflonin-5 {
+  left:120px;
+  top:82px;
+  animation: ldio-2ol9qflonin 1s linear infinite;
+  animation-delay:0.375s
+}
+.ldio-2ol9qflonin-6 {
+  left:44px;
+  top:120px;
+  animation: ldio-2ol9qflonin 1s linear infinite;
+  animation-delay:0.75s
+}
+.ldio-2ol9qflonin-7 {
+  left:82px;
+  top:120px;
+  animation: ldio-2ol9qflonin 1s linear infinite;
+  animation-delay:0.625s
+}
+.ldio-2ol9qflonin-8 {
+  left:120px;
+  top:120px;
+  animation: ldio-2ol9qflonin 1s linear infinite;
+  animation-delay:0.5s
+}

@@ -1,6 +1,9 @@
+import counterReducer from "./cart-counter";
+import cartReducer from './shopping-cart'
+import bookListReducer from "./book-list";
 
-const reducer = () => {
-
+export {
+  counterReducer,
+  cartReducer,
+  bookListReducer
 }
-
-export default reducer;

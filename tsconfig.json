@@ -2,7 +2,10 @@
   "compilerOptions": {
     "plugins": [
       {
-        "name": "typescript-plugin-css-modules"
+        "name": "typescript-plugin-css-modules",
+        "options":{
+          "classnameTransform": "camelCaseOnly"
+        }
       }
     ],
     "target": "es5",
@@ -15,7 +18,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",

@@ -1,0 +1,21 @@
+.shopping-cart__table{
+  table-layout: fixed;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.shopping-cart__table td, .shopping-cart__table th{
+  border: 2px solid #000094;
+}
+
+.shopping-cart tr {
+  height: 40px;
+}
+
+.total {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
