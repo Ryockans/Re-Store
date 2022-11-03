@@ -1,5 +1,5 @@
-import BookInfo from "../components/models/book-info";
-import BookStoreService from "../components/models/service";
+import BookInfo from "../types/book-info";
+import BookStoreService from "../types/service";
 
 export default class BookstoreService implements BookStoreService{
   data = [

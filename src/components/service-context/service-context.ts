@@ -1,5 +1,5 @@
 import React from "react";
-import BookStoreService from "../models/service";
+import BookStoreService from "../../types/service";
 
 const service: BookStoreService = {
   data: [],

@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 import {increment} from "../../reducers/cart-counter";
 import {addToCart} from "../../reducers/shopping-cart";
 
-import BookInfo from "../models/book-info";
+import BookInfo from "../../types/book-info";
 
 import styles from './book-list-item.module.css'
 

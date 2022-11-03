@@ -1,13 +1,13 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext, useEffect} from "react";
 import { useSelector, useDispatch } from 'react-redux'
 import {RootState} from "../../store";
 
-import BookInfo from "../models/book-info";
+import BookInfo from "../../types/book-info";
 import BookListItem from "../book-list-item";
 import Spinner from "../spinner";
 import ErrorIndicator from "../error-indicator";
 import ServiceContext from "../service-context";
-import service from "../models/service";
+import service from "../../types/service";
 import {booksError, booksLoaded, booksRequired} from "../../reducers/book-list";
 
 import styles from './book-list.module.css'
@@ -38,7 +38,7 @@ const BookList = () => {
   // ComponentDidMount
   useEffect(() => {
     fetchBooks(service);
-  }, []);
+  }, [service]);
 
   const renderList = () => {
     return data.map((item: BookInfo, index: number) => {

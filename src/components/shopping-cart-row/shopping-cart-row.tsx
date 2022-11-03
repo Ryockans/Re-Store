@@ -4,7 +4,7 @@ import {useDispatch} from "react-redux";
 import {increment, decrement, clean} from "../../reducers/cart-counter";
 import {addToCart, removeFromCart, removeAll} from "../../reducers/shopping-cart";
 
-import ShoppingCartItem from "../models/shopping-cart-item";
+import ShoppingCartItem from "../../types/shopping-cart-item";
 
 interface ShoppingCartRowProps {
   item: ShoppingCartItem,

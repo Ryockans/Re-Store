@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {useSelector} from "react-redux";
 import {RootState} from "../../store";
-import ShoppingCartItem from "../models/shopping-cart-item";
+import ShoppingCartItem from "../../types/shopping-cart-item";
 import ShoppingCartRow from "../shopping-cart-row";
 
 import styles from './shopping-cart.module.css'
